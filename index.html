@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Successful</title>
+    <style>
+        @font-face {
+            font-family: 'Whitney';
+            src: url('https://discordapp.com/assets/ffb63dcae9700a5a8ec1.ttf');
+        }
+        body {
+            background-color: #000;
+            font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+            animation: fadeIn 1s ease-out, slide-up 0.6s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slide-up {
+            from { transform: translateY(50px); }
+            to { transform: translateY(0); }
+        }
+        .message {
+            font-size: 1.5em; /* 24px */
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 16px;
+        }
+        .submessage {
+            font-size: 1em; /* 16px */
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" role="dialog" aria-labelledby="verificationMessage">
+        <div id="verificationMessage" class="message">✅ You are verified.</div>
+        <div class="submessage">You can close this page.</div>
+    </div>
+</body>
+</html>
