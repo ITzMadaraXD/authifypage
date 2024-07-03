@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verification Successful</title>
+    <title>Authify Web</title>
     <style>
         @font-face {
             font-family: 'Whitney';
@@ -45,12 +45,21 @@
             font-size: 1em; /* 16px */
             color: #aaa;
         }
+        /* Add this if you need a link to /callback */
+        .callback-link {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #4caf50;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <div class="container" role="dialog" aria-labelledby="verificationMessage">
         <div id="verificationMessage" class="message">✅ You are verified.</div>
         <div class="submessage">You can close this page.</div>
+        <!-- Add this link if needed -->
+        <a href="/callback" class="callback-link">Go to Callback</a>
     </div>
 </body>
 </html>
